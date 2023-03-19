@@ -1,6 +1,6 @@
 <template>
-  <div class="container m-auto bg-[#F6F8FD] h-[474px] w-[500px]">
-    <div class="h-[54px] bg-[#FFFFFF] flex items-center">
+  <div class="container m-auto bg-[#F6F8FD] h-[474px] w-[500px] rounded">
+    <div class="h-[54px] bg-[#FFFFFF] flex items-center rounded">
       <button class="flex w-1/3 p-[20px]">
         <CloseIcon class="h-3.5 w-3.5 transform rotate-45" />
       </button>

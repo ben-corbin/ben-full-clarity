@@ -1,7 +1,7 @@
 <template>
-  <div class="container m-auto bg-[#F6F8FD] h-[564px] w-[500px] overflow-y-auto">
+  <div class="container m-auto bg-[#F6F8FD] h-[564px] w-[500px] overflow-y-auto rounded">
     <div class="fixed-container">
-      <div class="h-[54px] bg-[#FFFFFF] flex items-center">
+      <div class="h-[54px] bg-[#FFFFFF] flex items-center rounded">
         <button class="flex w-1/3 pl-[20px] py-[12px]">
           <BackIcon class="h-[23.96px] w-[23.96px]" @click="backClick" />
         </button>
