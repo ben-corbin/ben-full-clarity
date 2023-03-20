@@ -18,12 +18,14 @@
           </button>
         </div>
       </div>
+      <!-- TO DO - extract this into search component and import -->
       <div class="flex flex-col items-center justify-center bg-[#F6F8FD]">
         <input
           v-model="searchInput"
           type="text"
           placeholder="Search"
           class="box-border h-[50px] w-[460px] m-5 border border-gray-300 rounded-full bg-white pl-[21px] font-nunito text-sm text-[#405069]"
+          style="box-shadow: 0 0 50px 0 rgba(223, 231, 242, 0.5);"
         />
       </div>
     </div>
@@ -61,6 +63,7 @@ import LoadingSpinner from './LoadingSpinner.vue';
 import SearchIcon from './icons/SearchIcon.vue';
 
 export default {
+  name: 'StepTwo',
   components: {
     BackIcon,
     AddIcon,

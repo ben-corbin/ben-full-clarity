@@ -39,13 +39,14 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { useStore } from 'vuex';
 import ImageUploader from './ImageUploader.vue';
 
 import CloseIcon from './icons/CloseIcon.vue';
 
 export default {
+  name: 'StepOne',  
   components: {
     ImageUploader,
     CloseIcon,
