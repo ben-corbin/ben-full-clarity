@@ -16,10 +16,10 @@
     <div v-if="imageSrc" class="relative w-36 h-36">
       <img :src="imageSrc" class="w-full h-full object-cover rounded-full" />
       <button
-        class="absolute top-0 right-0 bg-white text-black font-bold p-1 rounded-full"
+        class="absolute top-3.5 right-0 bg-[#96A6BE] text-white font-bold p-1 rounded-full transform rotate-45"
         @click="removeImage"
       >
-        x
+        <AddIcon class="h-[18px] w-[18px]" />
       </button>
     </div>
     <div
@@ -43,6 +43,7 @@
 import { ref, watch } from 'vue';
 import GroupIcon from './icons/GroupIcon.vue';
 import FileIcon from './icons/FileIcon.vue';
+import AddIcon from './icons/AddIcon.vue';
 
 export default {
   props: {
@@ -51,7 +52,8 @@ export default {
   components: {
     GroupIcon,
     FileIcon,
-  },
+    AddIcon
+},
   setup(props, { emit }) {
     const isDraggingOver = ref(false);
     const imageSrc = ref(null);
