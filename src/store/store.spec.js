@@ -1,6 +1,6 @@
 import { createTestStore } from '@/store';
 import { fetchContacts } from '@/services/api';
-import { afterEach, beforeEach, describe, expect, it, vi, contains } from 'vitest'
+import { beforeEach, describe, expect, it} from 'vitest'
 
 describe('store', () => {
   let store;
