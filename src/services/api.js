@@ -26,7 +26,7 @@ export async function fetchContacts() {
 //       url: 'https://europe-west2-coding-challenge-62755.cloudfunctions.net/getContacts',
 //       headers: { 'Content-Type': 'application/json', Authorization: apiKey },
 //     };
-  
+
 //     async function tryRequest(attempts) {
 //       for (let i = 0; i < attempts; i++) {
 //         try {
@@ -42,8 +42,27 @@ export async function fetchContacts() {
 //         }
 //       }
 //     }
-  
+
 //     return await tryRequest(3);
+//   }
+
+// Alternative method to fetch contacts that allows for query string
+
+// export async function fetchContacts(searchString = '') {
+//     const options = {
+//       method: 'GET',
+//       url: 'https://europe-west2-coding-challenge-62755.cloudfunctions.net/getContacts',
+//       headers: { 'Content-Type': 'application/json', Authorization: apiKey },
+//       params: { search: searchString },
+//     };
+
+//     try {
+//       const response = await axios.request(options);
+//       return response.data;
+//     } catch (error) {
+//       console.error(error);
+//       // TODO: Record error responses with logger
+//     }
 //   }
 
 export async function createGroup(groupName, selectedContacts, groupImage) {

@@ -19,6 +19,8 @@
         </div>
       </div>
       <!-- TO DO - extract this into search component and import -->
+      <!-- NOTE - I am using the Vuex store for search here, not the API, but this would -->
+      <!-- not be good practice or scalable if user numbers were higher -->
       <div class="flex flex-col items-center justify-center bg-[#F6F8FD]">
         <input
           v-model="searchInput"
@@ -98,6 +100,23 @@ export default {
         return name.includes(query);
       });
     });
+
+    // search using query string
+
+    //     async function fetchAndFilterContacts(searchString) {
+    //   try {
+    //     const data = await fetchContacts(searchString);
+    //     contacts.value = data;
+    //   } catch (error) {
+    //     console.error('Error fetching and filtering contacts:', error);
+    //   }
+    // }
+
+    // watcher for search input 
+
+    //     watch(searchInput, () => {
+    //   fetchAndFilterContacts(searchInput.value.trim().toLowerCase());
+    // }, { immediate: true });
 
     // toggle contact selection and update vuex store
     function toggleContactSelection(contact) {
