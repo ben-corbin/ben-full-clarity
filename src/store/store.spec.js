@@ -1,6 +1,6 @@
 import { createTestStore } from '@/store';
 import { fetchContacts } from '@/services/api';
-import { beforeEach, describe, expect, it} from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest';
 
 describe('store', () => {
   let store;
@@ -33,8 +33,7 @@ describe('store', () => {
         expect(response).toEqual(undefined);
       });
     });
-  }); 
+  });
 });
 
 // TO DO - add more tests
-

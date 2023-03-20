@@ -52,8 +52,8 @@ export default {
   components: {
     GroupIcon,
     FileIcon,
-    AddIcon
-},
+    AddIcon,
+  },
   setup(props, { emit }) {
     const isDraggingOver = ref(false);
     const imageSrc = ref(null);
@@ -66,7 +66,7 @@ export default {
       },
       { immediate: true },
     );
-    
+
     const dragEnter = () => {
       isDraggingOver.value = true;
     };

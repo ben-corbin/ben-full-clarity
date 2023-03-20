@@ -17,11 +17,9 @@
       </div>
     </div>
     <div class="flex flex-col items-center justify-center flex-grow">
-  <ConfirmationIcon class="w-36 h-36 text-[#96A6BE]rounded-full group" fill="#96A6BE"/>
-  <p class="pt-[20px] font-nunito text-base text-[#96A6BE]">
-   Group created
-  </p>
-</div>
+      <ConfirmationIcon class="w-36 h-36 text-[#96A6BE]rounded-full group" fill="#96A6BE" />
+      <p class="pt-[20px] font-nunito text-base text-[#96A6BE]">Group created</p>
+    </div>
   </div>
 </template>
 
@@ -47,4 +45,3 @@ export default defineComponent({
   },
 });
 </script>
-

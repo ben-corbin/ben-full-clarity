@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto h-screen flex justify-center align-center" >
+  <div class="container mx-auto h-screen flex justify-center align-center">
     <StepOne v-if="step === 1" @next="step++"></StepOne>
     <StepTwo v-else-if="step === 2" @next="handleNextEvent" @back="step--"></StepTwo>
     <success-screen v-else-if="step === 3" @reset="handleResetEvent"></success-screen>
@@ -32,9 +32,8 @@ export default defineComponent({
     return {
       step,
       handleNextEvent,
-        handleResetEvent,
+      handleResetEvent,
     };
   },
 });
 </script>
-
