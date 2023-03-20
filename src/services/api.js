@@ -2,6 +2,8 @@ import axios from 'axios';
 
 const apiKey = import.meta.env.VITE_APP_API_AUTH_TOKEN;
 
+// for a larger dataset pagination would be required
+
 export async function fetchContacts() {
   const options = {
     method: 'GET',
