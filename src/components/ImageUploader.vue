@@ -58,6 +58,7 @@ export default {
     const isDraggingOver = ref(false);
     const imageSrc = ref(null);
 
+    // watch for changes to the initialImage prop and update the imageSrc
     watch(
       () => props.initialImage,
       (newValue) => {
@@ -65,7 +66,7 @@ export default {
       },
       { immediate: true },
     );
-
+    
     const dragEnter = () => {
       isDraggingOver.value = true;
     };
@@ -86,6 +87,7 @@ export default {
 
     const handleFiles = (files) => {
       if (files.length > 0) {
+        // only use the first file to deal with multiple files
         const file = files[0];
         const reader = new FileReader();
 

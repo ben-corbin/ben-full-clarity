@@ -85,6 +85,7 @@ export default {
       }
     });
 
+    // search functionality
     const filteredContacts = computed(() => {
       const query = searchInput.value.trim().toLowerCase();
       if (!query) return contacts.value;
@@ -95,6 +96,7 @@ export default {
       });
     });
 
+    // toggle contact selection and update vuex store
     function toggleContactSelection(contact) {
       if (selectedContacts.value.includes(contact)) {
         selectedContacts.value = selectedContacts.value.filter((c) => c !== contact);
